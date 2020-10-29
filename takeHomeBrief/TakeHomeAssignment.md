@@ -40,26 +40,26 @@ An example of creating a re-usable react component is as follows:
 Functional Component organization
 
 ```
-// Card.tsx
+// Section.tsx
 ...
 return (
-    <div className='card-container'>
+    <div className='section-container'>
         {props.children}
         <img src={props.imgSrc}>
     </div>
 )
 
-// CardTitle.tsx
+// SectionTitle.tsx
 ...
 return (
-    <div className='card-title'>
+    <div className='section-title'>
         {props.children}
     </div>
 )
 
-// CardPara
+// SectionPara
 return (
-    <div className='card-para'>
+    <div className='section-para'>
         {props.children}
     </div>
 )
@@ -68,34 +68,34 @@ return (
 Scss files
 
 ```
-// Card.scss
+// Section.scss
 @import 'App.scss' // import app common styles
-@import 'card-title.scss'
-@import 'card-para.scss'
+@import 'section-title.scss'
+@import 'section-para.scss'
 
-.card-container {
-    .card-title {
+.section-container {
+    .section-title {
         @extend 'card-title'
         ...
     }
 
-    .card-para {
+    .section-para {
         @extend 'card-para'
         ...
     }
 }
 
-// CardTitle.scss
+// SectionTitle.scss
 @import 'App.scss'
 
-.card-title {
+.section-title {
     ...
 }
 
-// CardPara.scss
+// SectionPara.scss
 @import 'App.scss'
 
-.card-para {
+.section-para {
     ...
 }
 ```
@@ -103,13 +103,13 @@ Scss files
 Usage of these components:
 
 ```
-<Card imgSrc={'../src/to/image'}, flip={true}>
-  <CardTitle>
+<Section imgSrc={'../src/to/image'}, flip={true}>
+  <SectionTitle>
 	Title
-  </CardTitle>
+  </SectionTitle>
 
-  <CardParagraph>
+  <SectionParagraph>
         Para
-  </CardParagraph>
-</Card>
+  </SectionParagraph>
+</Section>
 ```
