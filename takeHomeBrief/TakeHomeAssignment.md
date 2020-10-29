@@ -75,12 +75,12 @@ Scss files
 
 .section-container {
     .section-title {
-        @extend 'card-title'
+        @extend 'section-title'
         ...
     }
 
     .section-para {
-        @extend 'card-para'
+        @extend 'section-para'
         ...
     }
 }
