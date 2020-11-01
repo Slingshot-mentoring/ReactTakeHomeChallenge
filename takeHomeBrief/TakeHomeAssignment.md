@@ -2,14 +2,22 @@
 
 ## Task 1
 
-1. Navigate to `localhost:3000/` and `localhost:3000/mentoring`.
-2. Read the given codebase and identify places where one can create re-usable react components.
-3. Create a comprehensive list called `components.md` in the root level directory of this project and list all of such components.
+1. Fork this repo to create a copy
+2. Clone your fork and cd into the `ReactTakeHomeChallenge/` folder. 
+3. Run `npm install` to install all dependencies. Make sure you have the latest version of `npm`.
+4. On successful completion of the above, run `npm start`.
+5. Now, Navigate to `localhost:3000/` and `localhost:3000/mentoring`.
+6. Read the given codebase and identify places where one can create re-usable react components.
+7. Create a comprehensive list called `components.md` in the root level directory of this project and list all of such components.
 
 ## Task 2
 
 1. Refactor the codebase to use re-usable react components across `localhost:3000/` and `localhost:3000/mentoring`
 2. In your `components.md` please link the folder corresponding to each component.
+3. Create a pull request from your fork into this original repo's master branch. 
+
+## Evaluation 
+We will review your PR, test it and get back to you with the final decision!
 
 ## Time limit
 
